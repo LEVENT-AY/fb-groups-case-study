@@ -1,3 +1,7 @@
+![FB Groups engineering case study cover](./assets/hero.svg)
+
+> **Visual overview:** conceptual case-study artwork based on the system architecture. It does not represent live customer, account, or moderation data.
+
 # FB Groups — AI Moderation & Market Intelligence Platform
 
 **Public engineering case study by [Levent Aydin](https://github.com/LEVENT-AY)**  
