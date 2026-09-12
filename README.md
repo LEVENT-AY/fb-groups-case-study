@@ -51,6 +51,12 @@ flowchart LR
 - Fail-closed execution when runtime identity or evidence is uncertain.
 - Immutable-artifact CI/CD with guarded delivery and rollback-minded operations.
 
+## Verification evidence
+
+The private engineering source keeps separate evidence domains for **Git source, built/staged extension, loaded browser runtime, backend/dashboard runtime, and external-platform acceptance**. Production delivery follows a heavy-test/build → immutable artifact → disposable staging → exact-artifact verification → guarded deployment flow. Browser-side acceptance is intentionally not inferred from server CI or Git state.
+
+This separation is part of the system's durable operating model, not a portfolio-only description. Sensitive runtime identities, account data, and production details remain private.
+
 ## Key engineering decisions
 
 ### Browser state is not server state
